@@ -20,11 +20,12 @@
     <h1>Olá, Mundo!</h1>
     <p>UFA!!! Já me livrei da maldição</p>
     <script>
-        var n1 = Number(window.prompt('Digite um número: '))
-        var n2 = Number(window.prompt('Digite outro número: '))
-        var s = n1 + n2
-        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
-       
+        var n1 = Number(window.prompt('Digite um número: '))    //Number converte automaticamente para Real ou Inteiro
+        var n2 = Number(window.prompt('Digite outro número: ')) 
+        var i3 = Number.parseInt(window.prompt('Digite um número: '))    //Number.parseInt converte Inteiro
+        var f4 = Number.parseFloat(window.prompt('Digite outro número: '))  //Number.parseFloatconverte para REAL
+        var s = n1 + n2 + i3 + f4
+        window.alert(`A soma de ${n1} + ${n2} + ${i3} + ${f4} é ${s}`)
     </script>
 </body>
 </html>
