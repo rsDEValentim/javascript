@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos && - || </title>
+
+    <script>
+
+        var n1=Number(prompt("Nota de Português"));
+        var n2=Number(prompt("Nota de Matemática"));
+        var n3=Number(prompt("Nota de História"));
+        var media=(n1 + n2 + n3) / 3
+
+        if(
+            ((media>=7)&&(n1>0)&&(n2>0)&&(n3>0))||((media>=6)&&(n1>0)&&(n2>0)&&(n3>=8)))  
+            //SE tst1 E tst2 E...for verdadeiro OU tst4 E tst5 E...for verdadeiro...
+            {                                                  
+                document.write(`Sua média é de ${media}. APROVADO!!!`);
+            }
+
+        else
+            //SENÃO...
+            {
+                document.write(`Sua média é de ${media}. REPROVADO`);
+            }
+
+            // and = && = e => Todas as confições devem ser verdade.
+            // or =|| = ou => apenas uma das condições devem ser verdader
+            // podemos comparar diretamente duas ou mais condições dentro de um único if
+       
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

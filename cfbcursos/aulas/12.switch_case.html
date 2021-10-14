@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - Case</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <script>
+        var pos, msg;
+
+        pontos=100;            
+
+        if(pontos >= 1000){
+            pos=1;
+        }else if(pontos >=800){
+            pos=2;
+        }else if(pontos >= 600){
+            pos=3;
+        }else{
+            pos=0;
+        }
+
+        switch(pos){
+            case 1:                                      //caso seja 1
+                msg="Primeiro Lugar <br>Medalha de Ouro";
+                break;
+            case 2:                                      //caso seja 2
+                msg="Segundo Lugar<br>Medalha de Prata";
+                break;
+            case 3:                                      //caso seja 3
+                msg="Terceiro Lugar<br>Medalha de Bronze";
+                break;
+            default:                                     //senão for nenhuma das opções anteriores
+                msg="Não foi ao Pódio<br>Não obteve Medalha";
+        }
+
+        switch(pos){
+            case 1:
+            case 2:
+            case 3:
+                msg+="<br>Subiu ao Pódio";         //caso seja 1, 2 ou 3 exiba + esta mensagem
+                break;
+            default:
+                msg+="<br>Não obteve colocação";   //senão exiba + esta outra mensagem
+        }
+
+        document.write(msg);
+
+
+
+
+        // O "switch" usamos quando sabemos o valor da variável.
+
+        // O "switch" case é uma forma de reduzir a complexidade de vários "if" … "else" encadeados. É muito utilizado, principalmente para uso em estruturas de menu. O conteúdo de uma variável é comparado com um valor constante, e caso a comparação seja verdadeira, um determinado comando é executado.
+
+        // A instrução "switch" é similar a uma série de instruções "if" sobre a mesma expressão. Em muitas ocasiões, você pode querer comparar a mesma variável (ou expressão) com muitos valores diferentes, executando uma peça diferente do código dependendo de qual valor ele se encaixar. Este é exatamente o que a instrução "switch" faz.
+    </script>
+
+</head>
+<body>
+</body>
+</html>

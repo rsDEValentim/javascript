@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocos de Comandos</title>
+
+    <script>        
+        var num=Number(prompt("Digite um número entre 0 e 10"));
+        if((num > 5)&&(num < 20))
+            {
+                $res=`Você digitou o número ${num} que é maior que Cinco`;
+            }
+        else if((num < 5)&&(num >0))
+            {
+                $res=`Você digitou o número ${num} que é menor que Cinco`;
+            }        
+        else if(num == 5)
+            {
+                $res=`Você digitou o número ${num} que é igual a Cinco`;
+            }       
+        else
+            {
+                $res=`Você digitou o número ${num}. Não tem nenhum comando para ele`;
+            }
+            document.write($res)
+            alert(`Você digitou o número ${num} correto?`);  
+
+
+        //forma que achei mais interessante para organizar meus códigos.
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

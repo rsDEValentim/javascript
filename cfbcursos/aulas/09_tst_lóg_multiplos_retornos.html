@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Lógicos com múltiplos retornos</title>
+    <Script>
+
+        confirm("Vamos jogar JO KEN PÔ?");
+        var jog1=prompt("Qual vai ser sua jogada RODRIGO?","JO KEN PÔ");
+        var jog2=prompt("Qual vai ser sua jogada SUELLEN?","JO KEN PÔ");
+        if(((jog1=="pedra")&&(jog2=="papel"))||((jog1=="papel")&&(jog2=="tesoura"))||(jog1=="tesoura")&&(jog2="pedra"))
+            {
+                alert(`PARABÉNS SUELLEN! Você ganhou Jogando ${jog2}`);
+            }
+        else if(((jog1=="pedra")&&(jog2=="tesoura"))||((jog1=="tesoura")&&(jog2=="papel"))||(jog1=="papel")&&(jog2="pedra"))
+            {
+                alert(`PARABÉNS RODRIGO! Você ganhou Jogando ${jog1}`);
+
+            }
+        else
+            {
+                alert(`RODRIGO jogou ${jog1} e SUELLEN jogou ${jog2}\nNINGUÉM GANHOU!!!`);
+
+            }
+        
+        //múltiplos retornos. SE verdadeiro... SENÃO SE... SENÃO...
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
